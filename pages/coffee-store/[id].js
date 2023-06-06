@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
@@ -45,7 +45,6 @@ export async function getStaticPaths() {
 }
 
 const CoffeeStore = (initialProps) => {
-  const { useEffect, useState, useContext } = React;
   const router = useRouter();
 
   const id = router.query.id;

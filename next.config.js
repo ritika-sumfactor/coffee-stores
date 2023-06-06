@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     domains: ["images.unsplash.com"],
   },
+  output: "export",
+  swcMinify: true
 };
 
 module.exports = nextConfig;
